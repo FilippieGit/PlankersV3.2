@@ -38,11 +38,12 @@
         android:layout_marginRight="20dp"
         android:hint="@string/senha"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/baseline_person">
+        app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,8 +53,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:text="Elevated button" />
+        android:text="Entrar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/esqsenha"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/esqueci_a_senha"
+            />
 
 
+        <Button
+            android:id="@+id/criarconta"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/criar_conta" />
+
+    </RelativeLayout>
 </LinearLayout>
