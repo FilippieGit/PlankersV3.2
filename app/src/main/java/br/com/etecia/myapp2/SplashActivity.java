@@ -1,6 +1,7 @@
 package br.com.etecia.myapp2;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,26 @@ public class SplashActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //abrir a janela de login utilizando uma thread
+
+        /*
+
+        Public class Pessoa{
+            Public Pessoa(){ Método construtor
+            }
+        }
+
+        Pessoa p = new Pessoa(); -- Pessoa = Tipo da variável, p = nome da variável, new = instância/executar/chamar, Pessoa() = Função
+
+         */
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        },3000);
+
     }
 }

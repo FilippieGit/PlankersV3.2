@@ -60,13 +60,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/esqsenha"
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/esqueci_a_senha"
-            />
+            android:layout_alignParentRight="true"/>
 
 
         <Button
@@ -74,7 +75,9 @@
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/criar_conta" />
+            android:text="@string/criar_conta"
+            android:layout_alignParentLeft="true"
+            />
 
     </RelativeLayout>
 </LinearLayout>
