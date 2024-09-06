@@ -1,5 +1,6 @@
 package br.com.etecia.myapp2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -38,7 +39,8 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                startActivity(new Intent(getApplicationContext(),LoginActivity.class)); //Intent é tudo que o usuário consegue fazer -- Para identificar uma classe: this, getApplicationContext
+                finish();
             }
         },3000);
 
