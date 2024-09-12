@@ -4,4 +4,6 @@
     <string name="senha">Senha</string>
     <string name="esqueci_a_senha">Esqueci a senha</string>
     <string name="criar_conta">Criar conta</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="entrar">Entrar</string>
 </resources>

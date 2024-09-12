@@ -3,17 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_margin="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal|center_vertical"
+    android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".CadastrarSenhaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/idRetornar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/baseline_arrow_back"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
+        android:layout_marginTop="80dp"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
         android:src="@drawable/logo" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -49,36 +62,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnCadastrar"
         style="@style/Widget.Material3.Button.ElevatedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:text="@string/entrar" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:text="@string/cadastrar" />
 
 
-        <Button
-            android:id="@+id/btnEsqSenha"
-            style="@style/Widget.Material3.Button.TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="0dp"
-            android:text="@string/esqueci_a_senha" />
-
-        <Button
-            android:id="@+id/btnCriarconta"
-            style="@style/Widget.Material3.Button.TextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:text="@string/criar_conta" />
-
-    </RelativeLayout>
 </LinearLayout>

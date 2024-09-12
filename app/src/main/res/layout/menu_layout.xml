@@ -9,6 +9,26 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu principal"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textColor="#382AFF"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="ME AJUDE"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
