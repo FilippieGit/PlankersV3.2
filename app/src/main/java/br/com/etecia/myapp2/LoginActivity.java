@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +12,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 public class LoginActivity extends AppCompatActivity {
 
     //Declarar as variáveis globais:
+
+    TextInputEditText email, senha;
     Button btnEsqSenha, btnCriarconta, btnEntrar;
 
     @Override
@@ -29,18 +35,37 @@ public class LoginActivity extends AppCompatActivity {
 
         //Apresentando as variáveis do java para o xml
 
+        email = findViewById(R.id.email);
+        senha = findViewById(R.id.senha);
+
         btnEsqSenha = findViewById(R.id.btnEsqSenha);
         btnCriarconta = findViewById(R.id.btnCriarconta);
         btnEntrar = findViewById(R.id.btnEntrar);
 
         //Criando as ações dos botões
 
+        btnEntrar.setOnClickListener(view -> {
+             String txtEmail, password;
+
+             txtEmail = email.getText().toString().trim();
+             password = senha.getText().toString().trim();
+
+            if (txtEmail.equals("etecia@amaral.com") && password.equals("123456")) {
+                startActivity(new Intent(getApplicationContext(),
+                    MenuActivity.class));
+                finish();
+            }else{
+                Toast.makeText(getApplicationContext(),
+                        "Usuário ou senha inválidos",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
         btnEsqSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), RecuperarSenhaActivity.class));
                 finish();
-
             }
         });
 
@@ -48,15 +73,18 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), CadastrarSenhaActivity.class));
+                finish();
             }
         });
 
+        /*
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+                finish();
             }
         });
-
+        */
     }
 }
