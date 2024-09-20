@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
              txtEmail = email.getText().toString().trim();
              password = senha.getText().toString().trim();
 
-            if (txtEmail.equals("etecia@amaral.com") && password.equals("123456")) {
+            if (txtEmail.equals("etecia") && password.equals("etecia")) {
                 startActivity(new Intent(getApplicationContext(),
                     MenuActivity.class));
                 finish();

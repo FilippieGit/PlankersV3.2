@@ -6,4 +6,10 @@
     <string name="criar_conta">Criar conta</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="entrar">Entrar</string>
+    <string name="acess_rios">Acessórios</string>
+    <string name="bikes">Bikes</string>
+    <string name="manuten_o">Manutenção</string>
+    <string name="dicas">Dicas</string>
+    <string name="locais">Locais</string>
+    <string name="eventos">Eventos</string>
 </resources>
