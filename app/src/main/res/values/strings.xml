@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyApp2</string>
+    <string name="app_name">Plankers</string>
     <string name="e_mail">E-mail</string>
     <string name="senha">Senha</string>
     <string name="esqueci_a_senha">Esqueci a senha</string>
@@ -12,4 +12,12 @@
     <string name="dicas">Dicas</string>
     <string name="locais">Locais</string>
     <string name="eventos">Eventos</string>
+    <string name="nova">Nova</string>
+    <string name="doa_es">Doações</string>
+    <string name="usadas">Usadas</string>
+    <string name="perdidas">Perdidas</string>
+    <string name="ruas">Ruas</string>
+    <string name="montanha">Montanha</string>
+    <string name="loja">Loja</string>
+    <string name="academia">Academia</string>
 </resources>

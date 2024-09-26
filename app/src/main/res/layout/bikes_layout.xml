@@ -31,4 +31,67 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeNova"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nova" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeUsadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usadas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeDoacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doa_es" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikePerdidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perdidas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeRuas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ruas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeMontanha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/montanha" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeLoja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loja" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeAcademia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/academia" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bikeCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casa" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
 </LinearLayout>
