@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
         android:text="Bikes"
         android:textAllCaps="true"
         android:textColor="#333333"
@@ -38,10 +38,10 @@
         app:tabMode="fixed">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/bikeNova"
+            android:id="@+id/bikeNovas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nova" />
+            android:text="@string/novas" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/bikeUsadas"
@@ -57,6 +57,12 @@
 
 
     </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/idViewPagerBikes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF9800" />
 
 
 </LinearLayout>
