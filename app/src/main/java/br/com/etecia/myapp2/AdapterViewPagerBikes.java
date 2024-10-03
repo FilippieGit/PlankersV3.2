@@ -13,11 +13,20 @@ public class AdapterViewPagerBikes extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        return null;
+        switch (position) {
+            case 0:
+                return new BikesNovasFragment();
+            case 1:
+                return new BikesUsadasFragment();
+            case 2:
+                return new BikesDoacaoFragment();
+            default:
+                return new BikesNovasFragment();
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 3;
     }
 }
